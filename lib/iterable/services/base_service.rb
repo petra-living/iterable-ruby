@@ -34,6 +34,17 @@ module Iterable
           end
         end
 
+        def delete(path, params = {}, response_type = Iterable::Responses::General)
+          url = URI::join(Util::Config.get('endpoints.base_url'), path).to_s
+          url = build_url(url, params)
+          response = RestClient.delete(url, get_headers())
+          begin
+            response_type.new JSON.parse(response.body)
+          rescue
+            Hashie::Mash.new JSON.parse(response.body)
+          end
+        end
+
         # Return required headers for making an http request with Iterable
         # @param [String] content_type - The MIME type of the body of the request, default is 'application/json'
         # @return [Hash] - authorization headers

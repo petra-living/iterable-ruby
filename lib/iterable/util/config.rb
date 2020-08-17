@@ -25,6 +25,7 @@ module Iterable
           :user_by_email                  => 'users/%s',
           :user_by_id                     => 'users/byUserId/%s',
           :user_update                    => 'users/update',
+          :user_delete                    => 'users/byUserId/%s',
           :user_subscriptions_update      => 'users/updateSubscriptions',
           :user_fields                    => 'users/getFields',
           :user_update_subscriptions      => 'users/updateSubscriptions',

@@ -23,6 +23,11 @@ module Iterable
           post(Util::Config.get('endpoints.user_update'), user)
         end
 
+        def delete_by_id(id)
+          raise Exceptions::ServiceException, "Id is required." if id.nil?
+          delete((Util::Config.get('endpoints.user_delete') % [id]))
+        end
+
         def fields
           get(Util::Config.get('endpoints.user_fields'))
         end

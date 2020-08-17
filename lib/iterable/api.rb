@@ -78,6 +78,10 @@ module Iterable
       Services::UserService.find_by_id(id)
     end
 
+    def user_delete(id)
+      Services::UserService.delete_by_id(id)
+    end
+
     def user_update(user)
       Services::UserService.update(user)
     end
