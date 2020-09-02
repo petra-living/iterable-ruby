@@ -1,6 +1,7 @@
 module Iterable
   class TrackedEvent < Iterable::Base
     property :eventName, required: true, coerce: String
+    property :createdAt
     property :email, required: true, coerce: String
     property :dataFields, coerce: DataFields
     property :userId, coerce: String
