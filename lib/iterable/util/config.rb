@@ -29,6 +29,7 @@ module Iterable
           :user_subscriptions_update      => 'users/updateSubscriptions',
           :user_fields                    => 'users/getFields',
           :user_update_subscriptions      => 'users/updateSubscriptions',
+          :user_update_email              => 'users/updateEmail',
 
           # subscriptions (lists)
           :lists                          => 'lists',

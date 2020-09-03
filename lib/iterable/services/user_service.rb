@@ -23,6 +23,11 @@ module Iterable
           post(Util::Config.get('endpoints.user_update'), user)
         end
 
+        def update_email(user)
+          raise Exceptions::ServiceException, "Must be a Iterable::Requests::UserUpdateEmail" unless user.is_a?(Iterable::Requests::UserUpdateEmail)
+          post(Util::Config.get('endpoints.user_update_email'), user)
+        end
+
         def delete_by_id(id)
           raise Exceptions::ServiceException, "Id is required." if id.nil?
           delete((Util::Config.get('endpoints.user_delete') % [id]))

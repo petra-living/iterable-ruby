@@ -41,6 +41,7 @@ module Iterable
     autoload :Unsubscribe, 'iterable/models/requests/unsubscribe'
     autoload :TrackPurchase, 'iterable/models/requests/track_purchase'
     autoload :UserUpdate, 'iterable/models/requests/user_update'
+    autoload :UserUpdateEmail, 'iterable/models/requests/user_update_email'
     autoload :TrackEvent, 'iterable/models/requests/track_event'
     autoload :TargetedEmail, 'iterable/models/requests/targeted_email'
     autoload :SubscriptionUpdate, 'iterable/models/requests/subscription_update'
