@@ -27,6 +27,13 @@ module Iterable
     end
 
     #
+    # Channel Services
+    #
+    def channels
+      Services::ChannelService.all
+    end
+
+    #
     # List Services
     #
     def lists

@@ -15,6 +15,7 @@ module Iterable
   autoload :User, 'iterable/models/user'
   autoload :DataFields, 'iterable/models/data_fields'
   autoload :ListDetails, 'iterable/models/list_details'
+  autoload :ChannelDetails, 'iterable/models/channel_details'
   autoload :CommerceItem, 'iterable/models/commerce_item'
   autoload :TrackedEvent, 'iterable/models/tracked_event'
   autoload :TargetEmail, 'iterable/models/target_email'
@@ -26,6 +27,7 @@ module Iterable
     autoload :General, 'iterable/models/responses/general'
     autoload :Lists, 'iterable/models/responses/lists'
     autoload :ListCreate, 'iterable/models/responses/list_create'
+    autoload :Channels, 'iterable/models/responses/channels'
     autoload :Subscribe, 'iterable/models/responses/subscribe'
     autoload :Unsubscribe, 'iterable/models/responses/unsubscribe'
     autoload :User, 'iterable/models/responses/user'
@@ -57,6 +59,7 @@ module Iterable
     autoload :UserService, 'iterable/services/user_service'
     autoload :EventService, 'iterable/services/event_service'
     autoload :EmailService, 'iterable/services/email_service'
+    autoload :ChannelService, 'iterable/services/channel_service'
     autoload :TemplateService, 'iterable/services/template_service'
   end
 

@@ -38,6 +38,9 @@ module Iterable
           :list_create                    => 'lists',
           :list_users                     => 'lists/getUsers',
 
+          # channels (channels)
+          :channels                       => 'channels',
+
           # message types
           :message_types                  => 'messageTypes',
 
