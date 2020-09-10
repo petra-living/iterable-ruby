@@ -10,6 +10,9 @@
 #   "unsubscribedMessageTypeIds": [
 #     0
 #   ],
+#   "subscribedMessageTypeIds": [
+#     0
+#   ],
 #   "campaignId": 0,
 #   "templateId": 0
 # }
@@ -20,6 +23,7 @@ module Iterable
       property :emailListIds, coerce: Array[Integer]
       property :unsubscribedChannelIds, coerce: Array[Integer]
       property :unsubscribedMessageTypeIds, coerce: Array[Integer]
+      property :subscribedMessageTypeIds, coerce: Array[Integer]
       property :campaignId, coerce: Integer
       property :templateId, coerce: Integer
     end
