@@ -1,3 +1,3 @@
 module Iterable
-  VERSION = "0.5.7.2".freeze
+  VERSION = "0.5.7.3".freeze
 end
